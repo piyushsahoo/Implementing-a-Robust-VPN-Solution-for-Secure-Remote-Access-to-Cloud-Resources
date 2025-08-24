@@ -104,26 +104,5 @@ yum install httpd -y
 # Start service
 systemctl start httpd
 
-
-Access Apache using the private IP of APP-SERVER while VPN is active.
-
- ✅ Results
-
-🔒 Remote users accessed AWS private resources securely.
-
-🌐 Apache server inside the private subnet was accessible only through VPN.
-
-🔑 VPN authentication ensured secure, encrypted access.
-
-⚡ Communication tested via NAT Gateway and private IPs.
-
-📝 Conclusion
-
-We successfully implemented a secure Point-to-Site VPN using AWS Client VPN and OpenVPN.
-
-✔️ Ensured encrypted communication with TLS + IPsec.
-✔️ Used IAM and certificate-based authentication.
-✔️ Achieved scalable, flexible architecture with split/full tunnel modes.
-✔️ Enabled remote employees to manage cloud resources without exposing them to the public internet.
 # Verify status
 systemctl status httpd
